@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -339,12 +338,15 @@
             <span data-es>Envíenos los detalles y estaremos listos para ayudarle.</span>
           </p>
 
-          <form onsubmit="sendQuote(event)">
+          <form action="https://formsubmit.co/JctCleaning@outlook.com" method="POST">
+            <input type="hidden" name="_subject" value="New JCT Cleaning Services Quote Request" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style="display:none" />
             <div class="form-grid">
-              <input id="name" type="text" placeholder="Name / Nombre" required />
-              <input id="phone" type="tel" placeholder="Phone / Teléfono" required />
-              <input id="email" type="email" placeholder="Email / Correo electrónico" />
-              <select id="service" required>
+              <input id="name" name="Name" type="text" placeholder="Name / Nombre" required />
+              <input id="phone" name="Phone" type="tel" placeholder="Phone / Teléfono" required />
+              <input id="email" name="email" type="email" placeholder="Email / Correo electrónico" />
+              <select id="service" name="Service" required>
                 <option value="">Choose a service / Elija un servicio</option>
                 <option>Residential Cleaning / Limpieza residencial</option>
                 <option>Commercial Cleaning / Limpieza comercial</option>
@@ -352,7 +354,7 @@
                 <option>Deep Cleaning / Limpieza profunda</option>
                 <option>Other / Otro</option>
               </select>
-              <textarea id="details" placeholder="Tell us what you need / Díganos qué necesita"></textarea>
+              <textarea id="details" name="Details" placeholder="Tell us what you need / Díganos qué necesita"></textarea>
               <button class="btn btn-teal" type="submit">
                 <span data-en>Send Quote Request</span><span data-es>Enviar solicitud</span>
               </button>
@@ -541,27 +543,6 @@
     function toggleLanguage(){
       document.body.classList.toggle("spanish");
       document.documentElement.lang = document.body.classList.contains("spanish") ? "es" : "en";
-    }
-
-    function sendQuote(event){
-      event.preventDefault();
-
-      const name = document.getElementById("name").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const service = document.getElementById("service").value;
-      const details = document.getElementById("details").value.trim();
-
-      const subject = encodeURIComponent("JCT Cleaning Services - Quote Request");
-      const body = encodeURIComponent(
-        "Name / Nombre: " + name + "\n" +
-        "Phone / Teléfono: " + phone + "\n" +
-        "Email: " + email + "\n" +
-        "Service / Servicio: " + service + "\n\n" +
-        "Details / Detalles:\n" + details
-      );
-
-      window.location.href = "mailto:JctCleaning@outlook.com?subject=" + subject + "&body=" + body;
     }
 
     document.querySelectorAll(".navlinks a").forEach(link => {
