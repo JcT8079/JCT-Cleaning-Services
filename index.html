@@ -213,6 +213,37 @@
     .contact-item small{display:block;color:#fff4fa;margin-bottom:2px}
     .contact-item a{font-weight:900;overflow-wrap:anywhere}
 
+
+    .review-section{
+      background:linear-gradient(135deg,#fff7fb,#eefcfb);
+      padding:64px 0;
+    }
+    .review-card{
+      max-width:760px;
+      margin:0 auto;
+      text-align:center;
+      background:white;
+      border:1px solid #f0dbe6;
+      border-radius:28px;
+      padding:34px;
+      box-shadow:0 14px 34px rgba(15,39,66,.08);
+    }
+    .review-card h2{
+      color:var(--dark);
+      font-size:clamp(2rem,4vw,2.8rem);
+      margin-bottom:10px;
+    }
+    .review-card p{
+      color:#6b7d90;
+      margin-bottom:22px;
+    }
+    .btn-review{
+      background:linear-gradient(90deg,#f59e0b,#f97316);
+      color:white;
+      box-shadow:0 10px 24px rgba(245,158,11,.22);
+    }
+    .btn-review:hover{transform:translateY(-2px)}
+
     footer{
       background:#082f49;color:#d7e6ef;padding:30px 0;text-align:center;font-size:.95rem;
     }
@@ -281,6 +312,7 @@
           <a href="#services"><span data-en>Services</span><span data-es>Servicios</span></a>
           <a href="#why"><span data-en>Why JCT</span><span data-es>Por qué JCT</span></a>
           <a href="#area"><span data-en>Service Area</span><span data-es>Área de servicio</span></a>
+          <a href="#reviews"><span data-en>Reviews</span><span data-es>Reseñas</span></a>
           <a href="#contact"><span data-en>Contact</span><span data-es>Contacto</span></a>
 
           <button class="lang-btn" onclick="toggleLanguage()">
@@ -480,6 +512,26 @@
       </div>
     </section>
 
+
+    <section class="review-section" id="reviews">
+      <div class="container">
+        <div class="review-card">
+          <h2>
+            <span data-en>Love your clean space?</span>
+            <span data-es>¿Te encantó tu espacio limpio?</span>
+          </h2>
+          <p>
+            <span data-en>Your feedback helps local customers feel confident choosing JCT Cleaning Services.</span>
+            <span data-es>Tu opinión ayuda a otros clientes locales a elegir JCT Cleaning Services con confianza.</span>
+          </p>
+          <a class="btn btn-review" href="https://g.page/r/CS0ymXXF2fBREBM/review" target="_blank" rel="noopener noreferrer">
+            <span data-en>⭐ Leave Us a Google Review</span>
+            <span data-es>⭐ Déjanos una reseña en Google</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="container">
         <div class="contact-grid">
@@ -508,10 +560,16 @@
               <span data-en>Call us now or use the quote form at the top of the page.</span>
               <span data-es>Llámenos ahora o use el formulario de cotización en la parte superior de la página.</span>
             </p>
-            <a class="btn btn-primary" href="tel:5099873053">
-              <span data-en>📞 Call JCT Cleaning Services</span>
-              <span data-es>📞 Llamar a JCT Cleaning Services</span>
-            </a>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <a class="btn btn-primary" href="tel:5099873053">
+                <span data-en>📞 Call JCT Cleaning Services</span>
+                <span data-es>📞 Llamar a JCT Cleaning Services</span>
+              </a>
+              <a class="btn btn-review" href="https://g.page/r/CS0ymXXF2fBREBM/review" target="_blank" rel="noopener noreferrer">
+                <span data-en>⭐ Google Review</span>
+                <span data-es>⭐ Reseña en Google</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
