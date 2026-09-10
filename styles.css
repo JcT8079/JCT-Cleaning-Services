@@ -163,3 +163,35 @@ footer{background:radial-gradient(circle at 0 100%,#fff1f6 0 10%,transparent 25%
   .lang-toggle{margin:0;align-self:center;min-width:48px;min-height:38px}
   .nav{left:0;right:0}
 }
+
+
+/* Approved quote + language navigation polish: no new colors, shapes, or sizes */
+.lang-toggle{
+  border:0;
+  background:transparent;
+  border-radius:0;
+  padding:8px 4px;
+  min-width:auto;
+  min-height:auto;
+  color:var(--blue);
+  box-shadow:none;
+  transform:none;
+}
+.lang-toggle:hover{
+  background:transparent;
+  border-color:transparent;
+  color:var(--pink);
+  transform:none;
+}
+.header-actions .btn{
+  background:transparent;
+  color:var(--pink);
+  border-radius:0;
+  padding:8px 0;
+  box-shadow:none;
+}
+.header-actions .btn:hover{
+  transform:none;
+  box-shadow:none;
+  color:var(--blue);
+}
