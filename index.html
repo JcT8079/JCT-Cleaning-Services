@@ -110,14 +110,18 @@
             <p>📍 Tri-Cities, WA</p>
           </div>
         </div>
-        <form class="quote-form" action="https://formsubmit.co/JctCleaning@outlook.com" method="POST">
+        <form class="quote-form" action="https://formsubmit.co/JctCleaning@outlook.com" method="POST" aria-label="Free cleaning quote request">
           <input type="hidden" name="_subject" value="New JCT Cleaning Services Quote Request" />
           <input type="hidden" name="_template" value="table" />
           <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" />
-          <input name="Name" type="text" placeholder="Name" required />
-          <input name="Phone" type="tel" placeholder="Phone" required />
-          <input name="email" type="email" placeholder="Email" />
-          <select name="Service" required>
+          <label class="sr-only" for="quote-name">Name</label>
+          <input id="quote-name" name="Name" type="text" placeholder="Name" autocomplete="name" required />
+          <label class="sr-only" for="quote-phone">Phone</label>
+          <input id="quote-phone" name="Phone" type="tel" placeholder="Phone" autocomplete="tel" inputmode="tel" required />
+          <label class="sr-only" for="quote-email">Email</label>
+          <input id="quote-email" name="email" type="email" placeholder="Email" autocomplete="email" />
+          <label class="sr-only" for="quote-service">Choose a service</label>
+          <select id="quote-service" name="Service" required>
             <option value="">Choose a service</option>
             <option>Residential Cleaning</option>
             <option>Commercial Cleaning</option>
@@ -125,7 +129,8 @@
             <option>Deep Cleaning</option>
             <option>Other</option>
           </select>
-          <textarea name="Details" placeholder="Tell us what you need"></textarea>
+          <label class="sr-only" for="quote-details">Tell us what you need</label>
+          <textarea id="quote-details" name="Details" placeholder="Tell us what you need"></textarea>
           <button class="btn form-btn" type="submit">Send Quote Request <span>›</span></button>
         </form>
       </div>
@@ -156,7 +161,30 @@
       const open = nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open);
     });
-    document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+    document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+
+    document.addEventListener('click', (event) => {
+      if (nav.classList.contains('open') && !nav.contains(event.target) && !toggle.contains(event.target)) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    const sections = [...document.querySelectorAll('main section[id], header[id]')];
+    const navLinks = [...document.querySelectorAll('.nav a')];
+    const setActiveNav = () => {
+      const y = window.scrollY + 130;
+      let current = 'home';
+      sections.forEach(section => {
+        if (section.offsetTop <= y) current = section.id;
+      });
+      navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + current));
+    };
+    window.addEventListener('scroll', setActiveNav, { passive: true });
+    setActiveNav();
   </script>
 </body>
 </html>
