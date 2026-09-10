@@ -24,86 +24,87 @@
     </a>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Primary navigation">
-      <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#work">Our Work</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
+      <a class="active" href="#home" data-i18n="navHome">Home</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#services" data-i18n="navServices">Services</a>
+      <a href="#work" data-i18n="navWork">Our Work</a>
+      <a href="#testimonials" data-i18n="navTestimonials">Testimonials</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    <button class="lang-toggle" type="button" aria-label="Cambiar a español">ES</button>
     </nav>
-    <a class="btn btn-small" href="#quote">Get a Free Quote <span>›</span></a>
+    <a class="btn btn-small" href="#quote"><span data-i18n="freeQuote">Get a Free Quote</span> <span>›</span></a>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <h1>A Cleaner Space</h1>
-        <div class="script-line">A Happier You ♡</div>
-        <p class="lead">Professional cleaning for homes and businesses in the Tri-Cities area.</p>
-        <a class="btn" href="#quote">Get a Free Quote <span>›</span></a>
+        <h1 data-i18n="heroTitle">A Cleaner Space</h1>
+        <div class="script-line" data-i18n="heroScript">A Happier You ♡</div>
+        <p class="lead" data-i18n="heroLead">Professional cleaning for homes and businesses in the Tri-Cities area.</p>
+        <a class="btn" href="#quote"><span data-i18n="freeQuote">Get a Free Quote</span> <span>›</span></a>
         <div class="trust-row" aria-label="Service benefits">
-          <div><span class="icon">◒</span><strong>Reliable<br>&amp; Trusted</strong></div>
-          <div><span class="icon">✦</span><strong>Detail-<br>Oriented</strong></div>
-          <div><span class="icon">⌂</span><strong>Residential &amp;<br>Commercial</strong></div>
+          <div><span class="icon">◒</span><strong data-i18n="trusted">Reliable<br>&amp; Trusted</strong></div>
+          <div><span class="icon">✦</span><strong data-i18n="detail">Detail-<br>Oriented</strong></div>
+          <div><span class="icon">⌂</span><strong data-i18n="resCommercial">Residential &amp;<br>Commercial</strong></div>
         </div>
       </div>
       <div class="hero-photo" role="img" aria-label="Professionally cleaned kitchen"></div>
     </section>
 
     <section class="section work" id="work">
-      <div class="section-kicker"><span></span>OUR WORK<span></span></div>
-      <h2>REAL RESULTS. BEAUTIFUL SPACES.</h2>
-      <p>Take a look at some of the spaces we've had the pleasure to clean.</p>
+      <div class="section-kicker"><span></span><b data-i18n="ourWork">OUR WORK</b><span></span></div>
+      <h2 data-i18n="resultsTitle">REAL RESULTS. BEAUTIFUL SPACES.</h2>
+      <p data-i18n="resultsLead">Take a look at some of the spaces we've had the pleasure to clean.</p>
       <div class="gallery">
-        <article class="card"><img src="assets/living-space.jpg" alt="Freshly cleaned living room"/><h3>LIVING SPACES</h3></article>
-        <article class="card"><img src="assets/bathroom.jpg" alt="Clean bathroom vanity"/><h3>BATHROOM CLEANING</h3></article>
-        <article class="card"><img src="assets/glass-shower.jpg" alt="Clean glass shower enclosure"/><h3>GLASS SHOWER CLEANING</h3></article>
+        <article class="card"><img src="assets/living-space.jpg" alt="Freshly cleaned living room"/><h3 data-i18n="living">LIVING SPACES</h3></article>
+        <article class="card"><img src="assets/bathroom.jpg" alt="Clean bathroom vanity"/><h3 data-i18n="bathroom">BATHROOM CLEANING</h3></article>
+        <article class="card"><img src="assets/glass-shower.jpg" alt="Clean glass shower enclosure"/><h3 data-i18n="shower">GLASS SHOWER CLEANING</h3></article>
       </div>
     </section>
 
     <section class="pink-band" id="about">
-      <div class="script-band">More Than Just Cleaning ♡</div>
-      <p>We create cleaner, healthier spaces<br>so you can focus on what matters most.</p>
-      <a class="btn btn-small" href="#quote">Get a Free Quote <span>›</span></a>
+      <div class="script-band" data-i18n="moreThan">More Than Just Cleaning ♡</div>
+      <p data-i18n="healthier">We create cleaner, healthier spaces<br>so you can focus on what matters most.</p>
+      <a class="btn btn-small" href="#quote"><span data-i18n="freeQuote">Get a Free Quote</span> <span>›</span></a>
     </section>
 
     <section class="features section" id="services">
       <div class="feature-grid">
-        <div><span>⌂</span><p>Residential &amp; Commercial</p></div>
-        <div><span>✦</span><p>Detail-Oriented</p></div>
-        <div><span>♢</span><p>Reliable &amp; Trusted</p></div>
-        <div class="feature-script">Cleaner Spaces<br>Brighter Lives ♡</div>
+        <div><span>⌂</span><p data-i18n="resCommercialPlain">Residential &amp; Commercial</p></div>
+        <div><span>✦</span><p data-i18n="detailPlain">Detail-Oriented</p></div>
+        <div><span>♢</span><p data-i18n="trustedPlain">Reliable &amp; Trusted</p></div>
+        <div class="feature-script" data-i18n="tagline">Cleaner Spaces<br>Brighter Lives ♡</div>
       </div>
     </section>
 
     <section class="service-details section">
-      <div class="section-kicker"><span></span>SERVICES<span></span></div>
-      <h2>PROFESSIONAL CLEANING WITH A PERSONAL TOUCH.</h2>
+      <div class="section-kicker"><span></span><b data-i18n="servicesKicker">SERVICES</b><span></span></div>
+      <h2 data-i18n="servicesTitle">PROFESSIONAL CLEANING WITH A PERSONAL TOUCH.</h2>
       <div class="service-grid">
-        <article><strong>🏠 Residential Cleaning</strong><p>Recurring or one-time cleaning for houses, apartments, and living spaces.</p></article>
-        <article><strong>🏢 Commercial Cleaning</strong><p>Professional cleaning for offices, workplaces, and small businesses.</p></article>
-        <article><strong>✨ Deep Cleaning</strong><p>Extra attention for kitchens, bathrooms, high-touch areas, and detailed cleaning.</p></article>
-        <article><strong>📦 Move-In / Move-Out</strong><p>Get a property ready before moving in, turning over a rental, or handing over the keys.</p></article>
+        <article><strong data-i18n="resTitle">🏠 Residential Cleaning</strong><p data-i18n="resDesc">Recurring or one-time cleaning for houses, apartments, and living spaces.</p></article>
+        <article><strong data-i18n="commercialTitle">🏢 Commercial Cleaning</strong><p data-i18n="commercialDesc">Professional cleaning for offices, workplaces, and small businesses.</p></article>
+        <article><strong data-i18n="deepTitle">✨ Deep Cleaning</strong><p data-i18n="deepDesc">Extra attention for kitchens, bathrooms, high-touch areas, and detailed cleaning.</p></article>
+        <article><strong data-i18n="moveTitle">📦 Move-In / Move-Out</strong><p data-i18n="moveDesc">Get a property ready before moving in, turning over a rental, or handing over the keys.</p></article>
       </div>
     </section>
 
     <section class="testimonials section" id="testimonials">
-      <div class="section-kicker"><span></span>WHY JCT<span></span></div>
-      <h2>CLEANING YOU CAN FEEL GOOD ABOUT.</h2>
+      <div class="section-kicker"><span></span><b data-i18n="whyKicker">WHY JCT</b><span></span></div>
+      <h2 data-i18n="whyTitle">CLEANING YOU CAN FEEL GOOD ABOUT.</h2>
       <div class="quote-grid">
-        <blockquote>Dependable, detailed, and easy to work with. The house feels fresh every time.</blockquote>
-        <blockquote>A professional clean with real attention to the small details.</blockquote>
-        <blockquote>Exactly the kind of local service we were looking for.</blockquote>
+        <blockquote data-i18n="quote1">Dependable, detailed, and easy to work with. The house feels fresh every time.</blockquote>
+        <blockquote data-i18n="quote2">A professional clean with real attention to the small details.</blockquote>
+        <blockquote data-i18n="quote3">Exactly the kind of local service we were looking for.</blockquote>
       </div>
-      <div class="center-action"><a class="review-btn" href="https://g.page/r/CS0ymXXF2fBREBM/review" target="_blank" rel="noopener noreferrer">⭐ Leave Us a Google Review</a></div>
+      <div class="center-action"><a class="review-btn" href="https://g.page/r/CS0ymXXF2fBREBM/review" target="_blank" rel="noopener noreferrer"><span data-i18n="review">⭐ Leave Us a Google Review</span></a></div>
     </section>
 
     <section class="quote-section section" id="quote">
       <div class="quote-layout">
         <div class="quote-intro">
-          <div class="section-kicker left"><span></span>FREE QUOTE</div>
-          <h2>READY FOR A CLEANER SPACE?</h2>
-          <p>Tell us what you need and we'll be ready to help.</p>
+          <div class="section-kicker left"><span></span><b data-i18n="freeQuoteKicker">FREE QUOTE</b></div>
+          <h2 data-i18n="quoteTitle">READY FOR A CLEANER SPACE?</h2>
+          <p data-i18n="quoteLead">Tell us what you need and we'll be ready to help.</p>
           <div class="direct-contact">
             <a href="tel:5099873053">📞 509-987-3053</a>
             <a href="mailto:JctCleaning@outlook.com">✉ JctCleaning@outlook.com</a>
@@ -115,23 +116,23 @@
           <input type="hidden" name="_template" value="table" />
           <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" />
           <label class="sr-only" for="quote-name">Name</label>
-          <input id="quote-name" name="Name" type="text" placeholder="Name" autocomplete="name" required />
+          <input id="quote-name" name="Name" type="text" placeholder="Name" data-i18n-placeholder="namePlaceholder" autocomplete="name" required />
           <label class="sr-only" for="quote-phone">Phone</label>
-          <input id="quote-phone" name="Phone" type="tel" placeholder="Phone" autocomplete="tel" inputmode="tel" required />
+          <input id="quote-phone" name="Phone" type="tel" placeholder="Phone" data-i18n-placeholder="phonePlaceholder" autocomplete="tel" inputmode="tel" required />
           <label class="sr-only" for="quote-email">Email</label>
-          <input id="quote-email" name="email" type="email" placeholder="Email" autocomplete="email" />
+          <input id="quote-email" name="email" type="email" placeholder="Email" data-i18n-placeholder="emailPlaceholder" autocomplete="email" />
           <label class="sr-only" for="quote-service">Choose a service</label>
           <select id="quote-service" name="Service" required>
-            <option value="">Choose a service</option>
-            <option>Residential Cleaning</option>
-            <option>Commercial Cleaning</option>
-            <option>Move-In / Move-Out Cleaning</option>
-            <option>Deep Cleaning</option>
-            <option>Other</option>
+            <option value="" data-i18n="chooseService">Choose a service</option>
+            <option data-i18n="resOption">Residential Cleaning</option>
+            <option data-i18n="commercialOption">Commercial Cleaning</option>
+            <option data-i18n="moveOption">Move-In / Move-Out Cleaning</option>
+            <option data-i18n="deepOption">Deep Cleaning</option>
+            <option data-i18n="otherOption">Other</option>
           </select>
           <label class="sr-only" for="quote-details">Tell us what you need</label>
-          <textarea id="quote-details" name="Details" placeholder="Tell us what you need"></textarea>
-          <button class="btn form-btn" type="submit">Send Quote Request <span>›</span></button>
+          <textarea id="quote-details" name="Details" placeholder="Tell us what you need" data-i18n-placeholder="detailsPlaceholder"></textarea>
+          <button class="btn form-btn" type="submit"><span data-i18n="sendQuote">Send Quote Request</span> <span>›</span></button>
         </form>
       </div>
     </section>
@@ -145,13 +146,13 @@
         <a href="mailto:JctCleaning@outlook.com">✉ &nbsp; JctCleaning@outlook.com</a>
         <p>● &nbsp; Tri-Cities, WA</p>
       </div>
-      <div class="thank-you"><span>Thank you ♡</span><small>FOR SUPPORTING<br>LOCAL BUSINESSES</small></div>
+      <div class="thank-you"><span data-i18n="thankYou">Thank you ♡</span><small data-i18n="supportLocal">FOR SUPPORTING<br>LOCAL BUSINESSES</small></div>
     </div>
-    <div class="footer-bottom">CLEAN HOMES &nbsp; | &nbsp; HEALTHY SPACES &nbsp; | &nbsp; HAPPIER LIVES</div>
+    <div class="footer-bottom" data-i18n="footerTag">CLEAN HOMES &nbsp; | &nbsp; HEALTHY SPACES &nbsp; | &nbsp; HAPPIER LIVES</div>
     <div class="copyright">© <span id="year"></span> JCT Cleaning Services</div>
   </footer>
 
-  <a class="floating-call" href="tel:5099873053">📞 Call JCT</a>
+  <a class="floating-call" href="tel:5099873053" data-i18n="callJct">📞 Call JCT</a>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -185,6 +186,53 @@
     };
     window.addEventListener('scroll', setActiveNav, { passive: true });
     setActiveNav();
+
+    const translations = {
+      en: {
+        navHome:'Home', navAbout:'About', navServices:'Services', navWork:'Our Work', navTestimonials:'Testimonials', navContact:'Contact',
+        freeQuote:'Get a Free Quote', heroTitle:'A Cleaner Space', heroScript:'A Happier You ♡', heroLead:'Professional cleaning for homes and businesses in the Tri-Cities area.',
+        trusted:'Reliable<br>& Trusted', detail:'Detail-<br>Oriented', resCommercial:'Residential &<br>Commercial', ourWork:'OUR WORK', resultsTitle:'REAL RESULTS. BEAUTIFUL SPACES.', resultsLead:"Take a look at some of the spaces we've had the pleasure to clean.",
+        living:'LIVING SPACES', bathroom:'BATHROOM CLEANING', shower:'GLASS SHOWER CLEANING', moreThan:'More Than Just Cleaning ♡', healthier:'We create cleaner, healthier spaces<br>so you can focus on what matters most.',
+        resCommercialPlain:'Residential & Commercial', detailPlain:'Detail-Oriented', trustedPlain:'Reliable & Trusted', tagline:'Cleaner Spaces<br>Brighter Lives ♡', servicesKicker:'SERVICES', servicesTitle:'PROFESSIONAL CLEANING WITH A PERSONAL TOUCH.',
+        resTitle:'🏠 Residential Cleaning', resDesc:'Recurring or one-time cleaning for houses, apartments, and living spaces.', commercialTitle:'🏢 Commercial Cleaning', commercialDesc:'Professional cleaning for offices, workplaces, and small businesses.',
+        deepTitle:'✨ Deep Cleaning', deepDesc:'Extra attention for kitchens, bathrooms, high-touch areas, and detailed cleaning.', moveTitle:'📦 Move-In / Move-Out', moveDesc:'Get a property ready before moving in, turning over a rental, or handing over the keys.',
+        whyKicker:'WHY JCT', whyTitle:'CLEANING YOU CAN FEEL GOOD ABOUT.', quote1:'Dependable, detailed, and easy to work with. The house feels fresh every time.', quote2:'A professional clean with real attention to the small details.', quote3:'Exactly the kind of local service we were looking for.', review:'⭐ Leave Us a Google Review',
+        freeQuoteKicker:'FREE QUOTE', quoteTitle:'READY FOR A CLEANER SPACE?', quoteLead:"Tell us what you need and we'll be ready to help.", sendQuote:'Send Quote Request', thankYou:'Thank you ♡', supportLocal:'FOR SUPPORTING<br>LOCAL BUSINESSES', footerTag:'CLEAN HOMES &nbsp; | &nbsp; HEALTHY SPACES &nbsp; | &nbsp; HAPPIER LIVES', callJct:'📞 Call JCT',
+        namePlaceholder:'Name', phonePlaceholder:'Phone', emailPlaceholder:'Email', chooseService:'Choose a service', resOption:'Residential Cleaning', commercialOption:'Commercial Cleaning', moveOption:'Move-In / Move-Out Cleaning', deepOption:'Deep Cleaning', otherOption:'Other', detailsPlaceholder:'Tell us what you need'
+      },
+      es: {
+        navHome:'Inicio', navAbout:'Nosotros', navServices:'Servicios', navWork:'Nuestro Trabajo', navTestimonials:'Testimonios', navContact:'Contacto',
+        freeQuote:'Cotización Gratis', heroTitle:'Un Espacio Más Limpio', heroScript:'Un Tú Más Feliz ♡', heroLead:'Limpieza profesional para hogares y negocios en el área de Tri-Cities.',
+        trusted:'Confiable<br>y de Confianza', detail:'Atención<br>al Detalle', resCommercial:'Residencial y<br>Comercial', ourWork:'NUESTRO TRABAJO', resultsTitle:'RESULTADOS REALES. ESPACIOS HERMOSOS.', resultsLead:'Mira algunos de los espacios que hemos tenido el gusto de limpiar.',
+        living:'ESPACIOS DE VIVIENDA', bathroom:'LIMPIEZA DE BAÑOS', shower:'LIMPIEZA DE DUCHA DE VIDRIO', moreThan:'Más Que Solo Limpieza ♡', healthier:'Creamos espacios más limpios y saludables<br>para que puedas enfocarte en lo que más importa.',
+        resCommercialPlain:'Residencial y Comercial', detailPlain:'Atención al Detalle', trustedPlain:'Confiable y de Confianza', tagline:'Espacios Más Limpios<br>Vidas Más Brillantes ♡', servicesKicker:'SERVICIOS', servicesTitle:'LIMPIEZA PROFESIONAL CON UN TOQUE PERSONAL.',
+        resTitle:'🏠 Limpieza Residencial', resDesc:'Limpieza recurrente o de una sola vez para casas, apartamentos y espacios de vivienda.', commercialTitle:'🏢 Limpieza Comercial', commercialDesc:'Limpieza profesional para oficinas, lugares de trabajo y pequeños negocios.',
+        deepTitle:'✨ Limpieza Profunda', deepDesc:'Atención extra para cocinas, baños, áreas de alto contacto y limpieza detallada.', moveTitle:'📦 Entrada / Salida', moveDesc:'Prepara una propiedad antes de mudarte, entregar una renta o entregar las llaves.',
+        whyKicker:'POR QUÉ JCT', whyTitle:'LIMPIEZA QUE TE HACE SENTIR BIEN.', quote1:'Confiable, detallada y fácil de coordinar. La casa se siente fresca cada vez.', quote2:'Una limpieza profesional con verdadera atención a los pequeños detalles.', quote3:'Exactamente el tipo de servicio local que estábamos buscando.', review:'⭐ Déjanos una Reseña en Google',
+        freeQuoteKicker:'COTIZACIÓN GRATIS', quoteTitle:'¿LISTO PARA UN ESPACIO MÁS LIMPIO?', quoteLead:'Cuéntanos qué necesitas y estaremos listos para ayudarte.', sendQuote:'Enviar Solicitud', thankYou:'Gracias ♡', supportLocal:'POR APOYAR A LOS<br>NEGOCIOS LOCALES', footerTag:'HOGARES LIMPIOS &nbsp; | &nbsp; ESPACIOS SALUDABLES &nbsp; | &nbsp; VIDAS MÁS FELICES', callJct:'📞 Llamar a JCT',
+        namePlaceholder:'Nombre', phonePlaceholder:'Teléfono', emailPlaceholder:'Correo electrónico', chooseService:'Elige un servicio', resOption:'Limpieza Residencial', commercialOption:'Limpieza Comercial', moveOption:'Limpieza de Entrada / Salida', deepOption:'Limpieza Profunda', otherOption:'Otro', detailsPlaceholder:'Cuéntanos qué necesitas'
+      }
+    };
+    const langButton = document.querySelector('.lang-toggle');
+    let currentLang = localStorage.getItem('jct-language') || 'en';
+    function applyLanguage(lang){
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (translations[lang][key] !== undefined) el.innerHTML = translations[lang][key];
+      });
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.dataset.i18nPlaceholder;
+        if (translations[lang][key] !== undefined) el.placeholder = translations[lang][key];
+      });
+      langButton.textContent = lang === 'en' ? 'ES' : 'EN';
+      langButton.setAttribute('aria-label', lang === 'en' ? 'Cambiar a español' : 'Switch to English');
+      localStorage.setItem('jct-language', lang);
+    }
+    langButton.addEventListener('click', () => applyLanguage(currentLang === 'en' ? 'es' : 'en'));
+    applyLanguage(currentLang);
+
   </script>
 </body>
 </html>
